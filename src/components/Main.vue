@@ -37,13 +37,15 @@ export default {
             // Top Slider Info
             topSlider:[
                 {
+                    id : 'slider-1',
                     image : 'h6-slide-1-background.jpg',
                     title: 'Leaders in Learning',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     buttonText : 'register now',
                     link: '#'
                 },
-                {
+                {   
+                    id : 'slider-2',
                     image : 'h5-slide-1-background.jpg',
                     title: 'Accelerate Your Career',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
@@ -51,6 +53,7 @@ export default {
                     link: '#'
                 },
                 {
+                    id : 'slider-3',
                     image : 'course-9-f-img.jpg',
                     title: 'Contemporary Ideas',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',

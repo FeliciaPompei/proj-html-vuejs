@@ -1,23 +1,43 @@
 <template>
     <div>
-        <div class="slider-container mb-5" @mouseleave = "autoPlay" @mouseover = "stopPlay">
+        <div class="slider-container mb-5" @mouseleave="autoPlay" @mouseover="stopPlay">
             <div class="my-slider-images">
                 <div v-for="(sliderElement, index) in element" :key="index"> 
-                    <div class= "img-wrapper" :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
-                        <img class="card-img-top img-fluid"  :src="`img/${sliderElement.image}`" :alt="sliderElement.title" >
+                    <div class="img-wrapper" :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
+                        <img class="card-img-top img-fluid" :src="`img/${sliderElement.image}`" :alt="sliderElement.title">
                         <div class="img-description">
-                            <h1> {{sliderElement.title}} </h1>
-                            <p> {{sliderElement.subTitle}} </p>
-                            <a :href="sliderElement.link" class="btn btn-info">{{sliderElement.buttonText}} </a>
+                            <h1 class="mb-3">
+                                {{sliderElement.title}}
+                            </h1>
+                            <p class="text-white">
+                                {{sliderElement.subTitle}}
+                            </p>
+                            <a class="btn my-custom-btn"
+                            :href="sliderElement.link">
+                                {{sliderElement.buttonText}}
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="buttons text-white">
-                    <div class="my-previous position-absolute" @click = "previousSlide">
-                        <span class="my-prev-hook"> arrow before</span>
+                <div>
+                    <div class="my-previous position-absolute" @click="previousSlide">
+                        <span class="my-prev-hook">
+                            <i class="fas fa-angle-left"> </i>
+                        </span>
+                    </div>
+                    <div class= "my-circle-wrapper"
+                    v-for="(sliderElement, index) in element"
+                    :key="index">
+                        <div :id="sliderElement.id" 
+                        class="my-circle me-2"
+                        :class="(index == sliderIndex) ? 'active' : '' "
+                        @click="imageClick(index)">
+                        </div>
                     </div>
                     <div class="my-next position-absolute" @click = "nextSlide">
-                        <span class="my-next-hook">arrow next </span>
+                        <span class="my-next-hook">
+                            <i class="fas fa-angle-right"> </i>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -64,12 +84,13 @@ export default {
 <style lang="scss" scoped>
 .slider-container {
     width:100%;
-    height:60vh;
-    background-color: green;
+    height:85vh;
     position:relative;
     img{
-        height:60vh;;
-        object-fit: cover;
+        width:100%;
+        height:85vh;
+        object-fit:cover;
+        filter: sepia(30%) brightness(0.6);
     }
     .img-description{
         position:absolute;
@@ -80,9 +101,15 @@ export default {
         h1{
             font-size: 4rem;
             color:white;
-            background-color: rgba($color: #000000, $alpha: 0.4);
             border-radius: 2rem;
             padding: 1rem;
+        }
+        .my-custom-btn{
+            padding: 0.5rem 2rem;
+            background-color: #9CE0FF;
+            border-radius: 0;
+            text-transform: uppercase;
+            color:white;
         }
     }
     .my-previous, .my-next{
@@ -91,13 +118,30 @@ export default {
         transform: translateY(-50%);
         cursor: pointer;
         padding: 0.5rem 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .my-previous{
         left: 2rem;
     }
     .my-next{
         right: 2rem;
+    }
+    .my-circle-wrapper{
+        display:flex;
+        position: absolute;
+        bottom:2rem;
+        left:50%;
+        transform: translateX(-50%);
+
+        .my-circle{
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            border: 4px solid lightcoral;
+        }
+    }
+    .active{
+        background-color:lightcoral;
     }
 }
 </style>
