@@ -1,12 +1,24 @@
 <template>
     <main>
-        <h2 class="text-success">Main</h2>
+        <Slider/>
+        <!-- slider -->
+        <!-- mini nav bar -->
+        <!-- info about course with button on go to the top of the page-->
+        <!-- slider -->
+        <!-- info about course with button on go to the top of the page-->
+        <!-- slider -->
+        <!-- pricing plans  -->
+        <!-- similar to mini navbar -->
     </main>
 </template>
 
 <script>
+import Slider from './Slider.vue'
 export default {
-    name: 'MainIndex'
+    name: 'MainIndex',
+    components :{
+        Slider,
+    }
 }
 </script>
 
