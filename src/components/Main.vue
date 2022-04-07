@@ -6,11 +6,13 @@
         <NavBar
         :schoolSubjects = "schoolSubjects"
         />
+        <Course/>
+        <SliderReviews
+        :sliderReviews ='sliderReviews'
+        />
 
-        <!-- mini nav bar -->
-        <!-- info about course with button on go to the top of the page-->
-        <!-- slider -->
-        <!-- info about course with button on go to the top of the page-->
+        <!-- slider Review -->
+        <!-- slider vertical-->
         <!-- slider -->
         <!-- pricing plans  -->
         <!-- similar to mini navbar -->
@@ -20,11 +22,15 @@
 <script>
 import Slider from './Slider.vue'
 import NavBar from './NavBar.vue'
+import Course from './Course.vue'
+import SliderReviews from './SliderReviews.vue'
 export default {
     name: 'MainIndex',
     components :{
         Slider,
         NavBar,
+        Course,
+        SliderReviews
     },
     data(){
         return{
@@ -79,6 +85,29 @@ export default {
                     image:'h5-custom-icon-6.png'
                 },
             ],
+            sliderReviews : [
+                {
+                    id: 1,
+                    avatar: 'testimonials-standard-1.png',
+                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    name:'Bubble Gum Girl',
+                    status:'student',
+                },
+                {
+                    id: 2,
+                    avatar: 'testimonials-standard-2.png',
+                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    name:'Joan Collins',
+                    status:'student',
+                },
+                {
+                    id: 3,
+                    avatar: 'testimonials-standard-3.png',
+                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    name:'I look smart cause I\'m wearing glasses',
+                    status:'teacher',
+                },
+            ]
         }
     }
 }
@@ -86,7 +115,6 @@ export default {
 
 <style lang="scss" scoped>
 main{
-    height: 150vh;
     background-color: palevioletred;
 }
 </style>
