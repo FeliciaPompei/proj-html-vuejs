@@ -3,7 +3,7 @@
         <!-- Header navBar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../assets/img/logo-light.png" alt="icamedy Logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/logo-light.png" alt="icamedy Logo"></a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item text-uppercase" 
                     v-for="(item, index) in navItems" 
@@ -60,5 +60,6 @@ header{
     width:100%;
     position:fixed;
     top:0;
+    z-index: 3;
 }
 </style>
