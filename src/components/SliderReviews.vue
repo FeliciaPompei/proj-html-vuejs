@@ -1,25 +1,41 @@
 <template>
     <div>
-        <div class="slider-container mb-5" @mouseleave = "autoPlay" @mouseover = "stopPlay">
-            <div class="my-slider-images">
-                <div v-for="(review, index) in sliderReviews" :key="review.id"> 
-                    <div class= "img-wrapper" :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
-                        <img class="card-img-top img-fluid rounded-circle"  :src="`img/${review.avatar}`" :alt="review.name" >
-                        <div class="img-description">
-                            
-                            <p> {{review.comment}} </p>
-                            <h5> {{review.name}} </h5>
-                            <h6> {{review.status}} </h6>
-                        </div>
-                    </div>
+        <div class="my-slider-container d-flex justify-content-center mb-5"
+        @mouseleave = "autoPlay" 
+        @mouseover = "stopPlay">
+            <div class="d-flex flex-column justify-content-center align-items-center my-content-box"
+            v-for="(review, index) in sliderReviews" 
+            :key="index"
+            :class="(index == sliderIndex) ? 'd-block' : 'd-none' "> 
+                <img class="card-img-top rounded-circle mb-3"  :src="`img/${review.avatar}`" :alt="review.name" >
+                <div class="img-description p-3 text-center">
+                    <p> 
+                        {{review.comment}} 
+                    </p>
+                    <h5> 
+                        {{review.name}}
+                    </h5>
+                    <h6> 
+                        {{review.status}} 
+                    </h6>
                 </div>
-                <div class="buttons text-white">
-                    <div class="my-previous position-absolute" @click = "previousSlide">
-                        <span class="my-prev-hook"> arrow before</span>
-                    </div>
-                    <div class="my-next position-absolute" @click = "nextSlide">
-                        <span class="my-next-hook">arrow next </span>
-                    </div>
+            </div>
+            <div class="buttons text-white">
+                <div class="my-previous position-absolute" @click = "previousSlide">
+                    <span class="my-prev-hook"> arrow before</span>
+                </div>
+                <div class= "my-circle-wrapper">
+                        <div
+                        v-for="(review, index) in sliderReviews"
+                        :key="index"
+                        @click="imageClick(index)" 
+                        class="me-2"
+                        :id="review.id"
+                        :class="review.class">
+                        </div>
+                </div>
+                <div class="my-next position-absolute" @click = "nextSlide">
+                    <span class="my-next-hook">arrow next </span>
                 </div>
             </div>
         </div>
@@ -58,33 +74,56 @@ export default {
             this.isInAutoScroll = clearInterval(this.isInAutoScroll);
             this.isInAutoScroll = null;
         },
+        imageClick: function(imageIndex){
+            this.sliderIndex = imageIndex;
+        },
     }
 }
 </script>
 
 <style lang="scss" scoped>
-.slider-container {
+.my-slider-container {
     width:100%;
     height:60vh;
     background-color: green;
     position:relative;
+    padding:2rem;
     // background-image: url(img/h5-parallax-img-1.png);
-    img{
-        height:60vh;;
+    .my-content-box{
+        width:50%;
+        color:white;
+
+        img{
+        width:150px;
+        height:150px;
         object-fit: cover;
-    }
-    .img-description{
-        position:absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        text-align:centeR;
+        }
         h1{
             font-size: 4rem;
             color:white;
             background-color: rgba($color: #000000, $alpha: 0.4);
             border-radius: 2rem;
             padding: 1rem;
+        }
+
+    }
+    .my-circle-wrapper{
+        display:flex;
+        position: absolute;
+        bottom:2rem;
+        left:50%;
+        transform: translateX(-50%);
+
+        .my-circle{
+            display:block;
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            background-color:gray;
+        }
+
+        .active{
+            background-color:white;
         }
     }
     .my-previous, .my-next{

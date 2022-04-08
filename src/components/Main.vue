@@ -95,6 +95,7 @@ export default {
                     comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     name:'Bubble Gum Girl',
                     status:'student',
+                    class : 'my-circle'
                 },
                 {
                     id: 2,
@@ -102,6 +103,7 @@ export default {
                     comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     name:'Joan Collins',
                     status:'student',
+                    class : 'my-circle'
                 },
                 {
                     id: 3,
@@ -109,6 +111,7 @@ export default {
                     comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     name:'I look smart cause I\'m wearing glasses',
                     status:'teacher',
+                    class : 'my-circle'
                 },
             ]
         }
