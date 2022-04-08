@@ -151,66 +151,136 @@ export default {
                     question : 'What We Do',
                     title: 'Learning Possibilities',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-1.png',
+                        },
                     ]
                 },
                 {
                     question : 'Degree Programme',
                     title: 'The Degree we provide',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-2.png',
+                        },
                     ]
                 },
                 {
                     question : 'Career Archievements',
                     title: 'Career Archievements',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-3.png',
+                        },
                     ]
                 },
                 {
                     question : 'Personal Managment',
                     title: 'Personal Managment',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-4.png',
+                        },
                     ]
                 },
                 {
                     question : 'Steps To Success',
                     title: 'Steps To Success',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-5.png',
+                        },
                     ]
                 },
                 {
                     question : 'Knowledge Transfer',
                     title: 'Knowledge Transfer',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    list : [
-                        'We enrich lives through learning',
-                        'Maximizing potential throught individual attention',
-                        'The trusted name for specialized training',
-                        'People teach. People learn. This is where they connect.'
+                    
+                    list :[
+                        {
+                            item :'Maximizing potential throught individual attention',
+                        },
+                        {
+                            item :'The trusted name for specialized training',
+                        },
+                        {
+                            item :'The trusted name for specialized training.'
+                        },
+                        {
+                            item :'People teach. People learn. This is where they connect.'
+                        },
+                        {
+                            image:'h3-custom-icon-6.png',
+                        },
                     ]
                 }
             ],

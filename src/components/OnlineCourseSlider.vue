@@ -2,13 +2,15 @@
     <div>
         <div class="slider-container" @mouseleave="autoPlay" @mouseover="stopPlay">
             <div class="my-slider-cards d-flex">
-                <div v-for="(sliderElement, index) in onlineCourses" :key="index"
+                <div 
+                v-for="(sliderElement, index) in onlineCourses" 
+                :key="index"
+                :class="(index == sliderIndex) ? 'd-block' : 'd-none'"
                 >
-                <!-- :class="(index == sliderIndex) ? 'd-block' : 'd-none'" -->
                     <div class="card">
                         <img class="card-img-top"
-                        src="`img/${sliderElement.image}`" 
-                        alt="sliderElement.type">
+                        :src="`img/${sliderElement.image}.jpg`" 
+                        :alt="sliderElement.type">
                         <div class="card-body">
                             <h5 class="card-title">{{sliderElement.type}}</h5>
                             <p class="card-text">{{sliderElement.content}}</p>
@@ -77,7 +79,7 @@ export default {
     margin-bottom:7rem;
     background-color:palegoldenrod;
     .card{
-        // width: calc(100% / 3)
+        width: calc(100% / 3)
     }
     .my-circle-wrapper{
         display:flex;
