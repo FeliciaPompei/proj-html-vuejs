@@ -30,14 +30,16 @@
                         </span>
                     </div>
                     <div class= "my-circle-wrapper">
-                        <div
+                        <div class="me-2 d-flex justify-content-center align-items-center"
                         v-for="(sliderElement, index) in element"
                         :key="index"
                         @click="imageClick(index)" 
-                        class="me-2"
                         :id="sliderElement.class"
                         :class="(index == sliderIndex) ? 'active' : ''">
-
+                        <div
+                        :class="(index == sliderIndex) ? 'd-block' : 'd-none'">
+                            <i class="fas fa-circle"> </i> 
+                        </div>
                         </div>
                     </div>
                     <div class="my-next position-absolute" 
@@ -148,13 +150,14 @@ export default {
             width:20px;
             height:20px;
             border-radius: 50%;
-            background-color:gray;
-        }
-        .my-active-circle{
-            top:0;
-            left:0;
-            width:20px;
-            height:20px;
+            background-color:#0707071A;
+
+            .fa-circle{
+                font-size: 0.5rem;
+                text-align: center;
+                color:white;
+                margin-bottom: 0.6rem;
+            }
         }
     }
     .active{
