@@ -5,7 +5,7 @@
             v-for="(element, index) in schoolSubjects"
             :key="index"
             >
-                <div>
+                <div class="my-content-container">
                     <img class="mb-3"
                     :src="`img/${element.image} `" 
                     :alt="element.text">
@@ -28,6 +28,10 @@ export default {
 
 <style lang="scss" scoped>
     nav{
+        .my-content-container{
+            background-color:#D6F2FF;
+            padding:3rem 2.5rem;
+        }
         img{
             // width:150px;
             // height:150px;

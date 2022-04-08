@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="slider-container mb-5" @mouseleave="autoPlay" @mouseover="stopPlay">
+        <div class="slider-container" @mouseleave="autoPlay" @mouseover="stopPlay">
             <div class="my-slider-images">
                 <div v-for="(sliderElement, index) in element" :key="index"> 
                     <div class="img-wrapper" :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
@@ -89,6 +89,7 @@ export default {
     width:100%;
     height:85vh;
     position:relative;
+    margin-bottom:7rem;
     img{
         width:100%;
         height:85vh;
