@@ -7,17 +7,19 @@
             v-for="(review, index) in sliderReviews" 
             :key="index"
             :class="(index == sliderIndex) ? 'd-block' : 'd-none' "> 
-                <img class="card-img-top rounded-circle mb-3"  :src="`img/${review.avatar}`" :alt="review.name" >
+                <img class="card-img-top rounded-circle mb-3"
+                :src="`img/${review.avatar}`" 
+                :alt="review.name" >
                 <div class="img-description p-3 text-center">
-                    <p> 
+                    <h5 class="mb-4"> 
                         {{review.comment}} 
-                    </p>
-                    <h5> 
+                    </h5>
+                    <h5 class="fw-bold"> 
                         {{review.name}}
                     </h5>
-                    <h6> 
+                    <p class="text-uppercase fw-bold"> 
                         {{review.status}} 
-                    </h6>
+                    </p>
                 </div>
             </div>
             <div class="buttons text-white">
@@ -26,7 +28,7 @@
                         v-for="(review, index) in sliderReviews"
                         :key="index"
                         @click="imageClick(index)" 
-                        class="me-2"
+                        class="me-2 my-bg-color"
                         :id="review.class"
                         :class="(index == sliderIndex) ? 'active' : ''">
                         </div>
@@ -78,18 +80,18 @@ export default {
 <style lang="scss" scoped>
 .my-slider-container {
     width:100%;
-    height:60vh;
-    background-color: green;
+    height:80vh;
     position:relative;
     padding:2rem;
-    // background-image: url(img/h5-parallax-img-1.png);
+    background-image: url("../../public/img/h5-parallax-img-1.png");
+    background-position: center;
     .my-content-box{
         width:50%;
         color:white;
 
         img{
-        width:150px;
-        height:150px;
+        width:125px;
+        height:125px;
         object-fit: cover;
         }
         h1{
@@ -104,22 +106,23 @@ export default {
     .my-circle-wrapper{
         display:flex;
         position: absolute;
-        bottom:2rem;
+        bottom:6rem;
         left:50%;
         transform: translateX(-50%);
-        // background-image:url(./public/img/h5-parallax-img-1.png);
 
         #my-circle{
             display:block;
-            width:20px;
-            height:20px;
+            width:10px;
+            height:10px;
             border-radius: 50%;
-            background-color:gray;
+            
+        }
+        .my-bg-color{
+            background-color:#9CE0FF;
         }
 
         .active{
             background-color:white;
-            border: 5px solid white;
         }
     }
     .my-previous, .my-next{

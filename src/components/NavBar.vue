@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
     nav{
         .my-content-container{
-            background-color:#D6F2FF;
+            background-color:#F2F8FC;
             padding:3rem 2.5rem;
         }
         img{

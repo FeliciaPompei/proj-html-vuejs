@@ -118,11 +118,12 @@ export default {
             padding: 1rem;
         }
         .my-custom-btn{
-            padding: 0.5rem 2rem;
-            background-color: #9CE0FF;
+            padding: 1rem 2.5rem;
+            background-color: #40C4FF;
             border-radius: 0;
             text-transform: uppercase;
             color:white;
+            font-size: 0.8rem;
         }
     }
     .my-previous, .my-next{

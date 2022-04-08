@@ -1,12 +1,33 @@
 <template>
-    <main>
+    <main class="position-relative">
         <Slider 
         :element = "topSlider"
         />
         <NavBar
         :schoolSubjects = "schoolSubjects"
         />
+        <div class="top-button course p-2">
+            <a class="text-uppercase text-white" 
+            href="#"> 
+                <i class="fas fa-chevron-up text-center"> top </i>
+            </a>
+        </div>
         <Course/>
+        <div class="top-button art-empowering p-2">
+            <a class="text-uppercase text-white" 
+            href="#"> 
+                <i class="fas fa-chevron-up text-center"> top </i>
+                
+            </a>
+        </div>
+        <div class="top-button slider-review p-2">
+            <a class="text-uppercase text-white" 
+            href="#"> 
+                <i class="fas fa-chevron-up text-center"> top </i>
+                
+            </a>
+        </div>
+        
         <SliderReviews
         :sliderReviews ='sliderReviews'
         />
@@ -274,4 +295,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top-button{
+    background-color: #40C4FF;
+    width: 50px;
+    height:50px;
+
+    position:absolute;
+    right:0;
+}
+.course{
+    top:37%;
+}
+.art-empowering{
+    top: 59%;
+}
+.slider-review{
+    top:71%;
+}
 </style>
