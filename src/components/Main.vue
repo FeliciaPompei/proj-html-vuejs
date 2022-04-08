@@ -10,9 +10,10 @@
         <SliderReviews
         :sliderReviews ='sliderReviews'
         />
-
-        <!-- slider Review -->
         <!-- slider vertical-->
+        <OnlineCoursesSlider
+        :onlineCourses = 'onlineCourses'
+        />
         <!-- slider -->
         <!-- pricing plans  -->
         <!-- similar to mini navbar -->
@@ -24,13 +25,15 @@ import Slider from './Slider.vue'
 import NavBar from './NavBar.vue'
 import Course from './Course.vue'
 import SliderReviews from './SliderReviews.vue'
+import OnlineCoursesSlider from './OnlineCourseSlider.vue'
 export default {
     name: 'MainIndex',
     components :{
         Slider,
         NavBar,
         Course,
-        SliderReviews
+        SliderReviews,
+        OnlineCoursesSlider
     },
     data(){
         return{
@@ -116,6 +119,81 @@ export default {
                     status:'teacher',
                     class : 'my-circle'
                 },
+            ],
+            onlineCourses : [
+                {   
+                    image:'course-1-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-2-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-3-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-4-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'$120',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-5-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'$50',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-6-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-7-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-8-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'free',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                {
+                    image:'course-9-f-img',
+                    type: 'Andriod Developer',
+                    teacher: 'Davide Sanders',
+                    price:'$20',
+                    content: 'lorem',
+                    class : 'my-circle'
+                },
+                
             ]
         }
     }
@@ -123,7 +201,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main{
-    background-color: palevioletred;
-}
 </style>

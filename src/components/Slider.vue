@@ -3,7 +3,8 @@
         <div class="slider-container" @mouseleave="autoPlay" @mouseover="stopPlay">
             <div class="my-slider-images">
                 <div v-for="(sliderElement, index) in element" :key="index"> 
-                    <div class="img-wrapper" :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
+                    <div class="img-wrapper" 
+                    :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
                         <img class="card-img-top img-fluid" :src="`img/${sliderElement.image}`" :alt="sliderElement.title">
                         <div class="img-description">
                             <h1 class="mb-3">
@@ -20,7 +21,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="my-previous position-absolute" @click="previousSlide">
+                    <div class="my-previous position-absolute" 
+                    @click="previousSlide">
                         <span class="my-prev-hook">
                             <i class="fas fa-angle-left"> </i>
                         </span>
@@ -34,7 +36,8 @@
                         :class="sliderElement.class">
                         </div>
                     </div>
-                    <div class="my-next position-absolute" @click = "nextSlide">
+                    <div class="my-next position-absolute" 
+                    @click = "nextSlide">
                         <span class="my-next-hook">
                             <i class="fas fa-angle-right"> </i>
                         </span>

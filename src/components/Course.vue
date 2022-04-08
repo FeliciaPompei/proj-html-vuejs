@@ -35,12 +35,22 @@
                 <p class="fs-6">
                     Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.
                 </p>
-                <div class="row">
+                <div class="row my-text-color">
                     <div class="col-6">
-                        168
+                        <h1 class="my-title-size">
+                            168
+                        </h1>
+                        <h5>
+                            User Stories
+                        </h5>
                     </div>
                     <div class="col-6">
-                        347
+                        <h1 class="my-title-size">
+                            347
+                        </h1>
+                        <h5>
+                            Events
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -57,5 +67,8 @@ export default {
 <style lang="scss" scoped>
 .my-title-size{
     font-size:3rem;
+}
+.my-text-color{
+    color:#40C4FF;
 }
 </style>
