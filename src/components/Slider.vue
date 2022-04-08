@@ -25,13 +25,13 @@
                             <i class="fas fa-angle-left"> </i>
                         </span>
                     </div>
-                    <div class= "my-circle-wrapper"
-                    v-for="(sliderElement, index) in element"
-                    :key="index">
-                        <div :id="sliderElement.id" 
-                        class="my-circle me-2"
-                        :class="(index == sliderIndex) ? 'active' : '' "
-                        @click="imageClick(index)">
+                    <div class= "my-circle-wrapper">
+                        <div
+                        v-for="(sliderElement, index) in element"
+                        :key="index"
+                        @click="imageClick(index)" 
+                        class="me-2"
+                        :class="sliderElement.class">
                         </div>
                     </div>
                     <div class="my-next position-absolute" @click = "nextSlide">
@@ -56,6 +56,9 @@ export default {
         }
     },
     methods : {
+        imageClick: function(imageIndex){
+            this.sliderIndex = imageIndex;
+        },
         nextSlide : function (){
             if(this.sliderIndex == (this.element.length -1)){
                 this.sliderIndex = 0;

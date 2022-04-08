@@ -42,7 +42,8 @@ export default {
                     title: 'Leaders in Learning',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     buttonText : 'register now',
-                    link: '#'
+                    link: '#',
+                    class : 'my-circle'
                 },
                 {   
                     id : 'slider-2',
@@ -50,7 +51,8 @@ export default {
                     title: 'Accelerate Your Career',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     buttonText : 'register now',
-                    link: '#'
+                    link: '#',
+                    class : 'my-circle'
                 },
                 {
                     id : 'slider-3',
@@ -58,7 +60,8 @@ export default {
                     title: 'Contemporary Ideas',
                     subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
                     buttonText : 'register now',
-                    link: '#'
+                    link: '#',
+                    class : 'my-circle'
                 },
             ],
             // NavBar info

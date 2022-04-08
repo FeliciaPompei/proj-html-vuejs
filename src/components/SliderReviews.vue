@@ -21,9 +21,6 @@
                 </div>
             </div>
             <div class="buttons text-white">
-                <div class="my-previous position-absolute" @click = "previousSlide">
-                    <span class="my-prev-hook"> arrow before</span>
-                </div>
                 <div class= "my-circle-wrapper">
                         <div
                         v-for="(review, index) in sliderReviews"
@@ -33,9 +30,6 @@
                         :id="review.id"
                         :class="review.class">
                         </div>
-                </div>
-                <div class="my-next position-absolute" @click = "nextSlide">
-                    <span class="my-next-hook">arrow next </span>
                 </div>
             </div>
         </div>

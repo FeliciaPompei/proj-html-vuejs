@@ -1,14 +1,18 @@
 <template>
-    <nav class="container">
+    <nav class="container mb-5">
         <div class="row">
-            <div class="col-2"
+            <div class="col-2 d-flex justify-content-center"
             v-for="(element, index) in schoolSubjects"
             :key="index"
             >
-            <img :src="`img/${element.image} `" :alt="element.text">
-            <h6>
-                {{element.text}} 
-            </h6>
+                <div>
+                    <img class="mb-3"
+                    :src="`img/${element.image} `" 
+                    :alt="element.text">
+                    <h6 class="text-center">
+                        {{element.text}} 
+                    </h6>
+                </div>
             </div>
         </div>
         
@@ -24,7 +28,13 @@ export default {
 
 <style lang="scss" scoped>
     nav{
-        height:10vh;
-        background-color: palegreen;
+        img{
+            // width:150px;
+            // height:150px;
+
+        }
+        h6 {
+            
+        }
     }
 </style>
