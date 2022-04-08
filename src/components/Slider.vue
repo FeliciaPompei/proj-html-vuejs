@@ -5,7 +5,9 @@
                 <div v-for="(sliderElement, index) in element" :key="index"> 
                     <div class="img-wrapper" 
                     :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
-                        <img class="card-img-top img-fluid" :src="`img/${sliderElement.image}`" :alt="sliderElement.title">
+                        <img class="card-img-top img-fluid"
+                        :src="`img/${sliderElement.image}`"
+                        :alt="sliderElement.title">
                         <div class="img-description">
                             <h1 class="mb-3">
                                 {{sliderElement.title}}

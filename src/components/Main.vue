@@ -10,7 +10,10 @@
         <SliderReviews
         :sliderReviews ='sliderReviews'
         />
-        <!-- slider vertical-->
+        <LearningSection
+        :aboutIcademy ='aboutIcademy'
+        />
+
         <OnlineCoursesSlider
         :onlineCourses = 'onlineCourses'
         />
@@ -25,6 +28,7 @@ import Slider from './Slider.vue'
 import NavBar from './NavBar.vue'
 import Course from './Course.vue'
 import SliderReviews from './SliderReviews.vue'
+import LearningSection from './LearningSection.vue'
 import OnlineCoursesSlider from './OnlineCourseSlider.vue'
 export default {
     name: 'MainIndex',
@@ -33,6 +37,7 @@ export default {
         NavBar,
         Course,
         SliderReviews,
+        LearningSection,
         OnlineCoursesSlider
     },
     data(){
@@ -119,6 +124,74 @@ export default {
                     status:'teacher',
                     class : 'my-circle'
                 },
+            ],
+            aboutIcademy : [
+                {
+                    question : 'What We Do',
+                    title: 'Learning Possibilities',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                },
+                {
+                    question : 'Degree Programme',
+                    title: 'The Degree we provide',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                },
+                {
+                    question : 'Career Archievements',
+                    title: 'Career Archievements',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                },
+                {
+                    question : 'Personal Managment',
+                    title: 'Personal Managment',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                },
+                {
+                    question : 'Steps To Success',
+                    title: 'Steps To Success',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                },
+                {
+                    question : 'Knowledge Transfer',
+                    title: 'Knowledge Transfer',
+                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    list : [
+                        'We enrich lives through learning',
+                        'Maximizing potential throught individual attention',
+                        'The trusted name for specialized training',
+                        'People teach. People learn. This is where they connect.'
+                    ]
+                }
             ],
             onlineCourses : [
                 {   
