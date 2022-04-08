@@ -21,6 +21,9 @@
                 <p>
                     {{element.content}}
                 </p>
+                <p>
+                    {{element.list}}
+                </p>
             </div>
         </div>
     </section>

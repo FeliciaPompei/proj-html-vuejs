@@ -27,8 +27,8 @@
                         :key="index"
                         @click="imageClick(index)" 
                         class="me-2"
-                        :id="review.id"
-                        :class="review.class">
+                        :id="review.class"
+                        :class="(index == sliderIndex) ? 'active' : ''">
                         </div>
                 </div>
             </div>
@@ -107,8 +107,9 @@ export default {
         bottom:2rem;
         left:50%;
         transform: translateX(-50%);
+        // background-image:url(./public/img/h5-parallax-img-1.png);
 
-        .my-circle{
+        #my-circle{
             display:block;
             width:20px;
             height:20px;
@@ -118,6 +119,7 @@ export default {
 
         .active{
             background-color:white;
+            border: 5px solid white;
         }
     }
     .my-previous, .my-next{

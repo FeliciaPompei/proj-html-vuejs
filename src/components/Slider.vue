@@ -35,7 +35,9 @@
                         :key="index"
                         @click="imageClick(index)" 
                         class="me-2"
-                        :class="sliderElement.class">
+                        :id="sliderElement.class"
+                        :class="(index == sliderIndex) ? 'active' : ''">
+
                         </div>
                     </div>
                     <div class="my-next position-absolute" 
@@ -142,15 +144,23 @@ export default {
         left:50%;
         transform: translateX(-50%);
 
-        .my-circle{
+        #my-circle{
             width:20px;
             height:20px;
             border-radius: 50%;
-            border: 4px solid lightcoral;
+            background-color:gray;
+        }
+        .my-active-circle{
+            top:0;
+            left:0;
+            width:20px;
+            height:20px;
         }
     }
     .active{
-        background-color:lightcoral;
+        border:white 2px solid;
+        border-radius: 50%;
+
     }
 }
 </style>
