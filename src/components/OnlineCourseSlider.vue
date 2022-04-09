@@ -17,9 +17,22 @@
                         :src="`img/${sliderElement.image}.jpg`" 
                         :alt="sliderElement.type">
                         <div class="card-body w-100">
-                            <h5 class="card-title">{{sliderElement.type}}</h5>
-                            <p class="card-text">{{sliderElement.content}}</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <h5 class="card-title mb-1">{{sliderElement.type}}</h5>
+                                    <span> {{sliderElement.teacher}} </span>
+                                </div>
+                                <p> {{sliderElement.price}} </p>
+                            </div>
+                            <p class="card-text text-secondary">
+                                {{sliderElement.content}}
+                            </p>
+                            <span>
+                                <i class="fas fa-user"></i> {{sliderElement.group}}
+                            </span>
+                            <span>
+                                <i class="fas fa-tag"></i> {{sliderElement.courseType}}
+                            </span>
                         </div>
                     </div>
                 </div>

@@ -276,6 +276,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'programming',
                     class : 'my-circle'
                 },
                 {
@@ -284,6 +286,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'business',
                     class : 'my-circle'
                 },
                 {
@@ -292,6 +296,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'business',
                     class : 'my-circle'
                 }
                 ],
@@ -302,6 +308,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'$120',
                     content: 'lorem',
+                    group: 2,
+                    courseType: 'business',
                     class : 'my-circle'
                 },
                 {
@@ -310,6 +318,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'$50',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'programming',
                     class : 'my-circle'
                 },
                 {
@@ -318,6 +328,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'programming',
                     class : 'my-circle'
                 }
                 ],
@@ -328,6 +340,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 2,
+                    courseType: 'business',
                     class : 'my-circle'
                 },
                 {
@@ -336,6 +350,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'free',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'programming',
                     class : 'my-circle'
                 },
                 {
@@ -344,6 +360,8 @@ export default {
                     teacher: 'Davide Sanders',
                     price:'$20',
                     content: 'lorem',
+                    group: 1,
+                    courseType: 'programming',
                     class : 'my-circle'
                 }
                 ]
