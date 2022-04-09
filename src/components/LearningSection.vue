@@ -5,7 +5,7 @@
             v-for="(thumbnail, index) in aboutIcademy"
             :key="thumbnail.id"
             @click="displayListItems(index)">
-                <li class="thumbnail p-4"
+                <li class="thumbnail p-3"
                 @click="questionClick(index)"
                 :class="(index == sliderIndex) ? 'my-active fw-bold' : ''">
                     {{thumbnail.question}}
@@ -13,7 +13,8 @@
             </ul>
         </div>
         <div class="article p-5">
-            <div v-for="(element, index) in aboutIcademy"
+            <div class="mb-5"
+            v-for="(element, index) in aboutIcademy"
             :key="index"
             :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
                 <h1 class="mb-3">
@@ -25,16 +26,21 @@
             </div>
             <div class="d-flex">
                 <div>
-                    <ul>
-                        <li class="my-list-style"
+                    <ul class="p-0">
+                        <li class="my-check-mark"
                         v-for="(item, index) in aboutIcademy[listIndex].list"
                         :key="index">
                             {{item.item}}
-                            <div class="text-right">
-                                <img :src="`img/${item.image} `" alt="">
-                            </div>
                         </li>
                     </ul>
+                </div>
+                <div class="align-self-end ms-5" 
+                v-for="(element, index) in aboutIcademy"
+                :key="index"
+                :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
+                    <img class="img-fluid" 
+                    :src="`img/${element.image}`" 
+                    alt="Symbol">
                 </div>
             </div>
         </div>
@@ -83,11 +89,15 @@ section{
         width:70%;
         // background-color: palevioletred;
     }
-    .my-list-style{
-        list-style: none;
+    .my-check-mark:before{
+        content:'\2713';
+        font-size: 1.5rem;
+        color:lightblue;
     }
-    ul .my-list-style:before{
-        content:'\f00cc';
+    .my-check-mark{
+        list-style:none;
+        padding: 0.5rem;
+        padding-left:0;
     }
 }
 </style>

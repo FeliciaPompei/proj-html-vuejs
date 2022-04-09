@@ -151,6 +151,7 @@ export default {
                     question : 'What We Do',
                     title: 'Learning Possibilities',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    image:'h3-custom-icon-1.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -163,17 +164,14 @@ export default {
                         },
                         {
                             item :'People teach. People learn. This is where they connect.'
-                        },
-                        {
-                            image:'h3-custom-icon-1.png',
-                        },
+                        }
                     ]
                 },
                 {
                     question : 'Degree Programme',
                     title: 'The Degree we provide',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    
+                    image:'h3-custom-icon-2.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -186,16 +184,14 @@ export default {
                         },
                         {
                             item :'People teach. People learn. This is where they connect.'
-                        },
-                        {
-                            image:'h3-custom-icon-2.png',
-                        },
+                        }
                     ]
                 },
                 {
                     question : 'Career Archievements',
                     title: 'Career Archievements',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    image:'h3-custom-icon-3.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -208,17 +204,14 @@ export default {
                         },
                         {
                             item :'People teach. People learn. This is where they connect.'
-                        },
-                        {
-                            image:'h3-custom-icon-3.png',
-                        },
+                        }
                     ]
                 },
                 {
                     question : 'Personal Managment',
                     title: 'Personal Managment',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    
+                    image:'h3-custom-icon-4.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -231,17 +224,14 @@ export default {
                         },
                         {
                             item :'People teach. People learn. This is where they connect.'
-                        },
-                        {
-                            image:'h3-custom-icon-4.png',
-                        },
+                        }
                     ]
                 },
                 {
                     question : 'Steps To Success',
                     title: 'Steps To Success',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    
+                    image:'h3-custom-icon-5.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -254,17 +244,14 @@ export default {
                         },
                         {
                             item :'People teach. People learn. This is where they connect.'
-                        },
-                        {
-                            image:'h3-custom-icon-5.png',
-                        },
+                        }
                     ]
                 },
                 {
                     question : 'Knowledge Transfer',
                     title: 'Knowledge Transfer',
                     content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    
+                    image:'h3-custom-icon-6.png',
                     list :[
                         {
                             item :'Maximizing potential throught individual attention',
@@ -278,14 +265,12 @@ export default {
                         {
                             item :'People teach. People learn. This is where they connect.'
                         },
-                        {
-                            image:'h3-custom-icon-6.png',
-                        },
                     ]
                 }
             ],
             onlineCourses : [
-                {   
+                [
+                    {   
                     image:'course-1-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
@@ -308,8 +293,10 @@ export default {
                     price:'free',
                     content: 'lorem',
                     class : 'my-circle'
-                },
-                {
+                }
+                ],
+                [
+                    {
                     image:'course-4-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
@@ -332,8 +319,10 @@ export default {
                     price:'free',
                     content: 'lorem',
                     class : 'my-circle'
-                },
-                {
+                }
+                ],
+                [
+                    {
                     image:'course-7-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
@@ -356,8 +345,8 @@ export default {
                     price:'$20',
                     content: 'lorem',
                     class : 'my-circle'
-                },
-                
+                }
+                ]
             ]
         }
     }
