@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h1>Popular Online Courses</h1>
+                <h1 class="mb-3">Popular Online Courses</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab commodi numquam reiciendis excepturi</p>
             </div>
         </div>
@@ -22,16 +22,19 @@
                                     <h5 class="card-title mb-1">{{sliderElement.type}}</h5>
                                     <span> {{sliderElement.teacher}} </span>
                                 </div>
-                                <p> {{sliderElement.price}} </p>
+                                <span class="rounded-pill text-white my-price-tag align-self-start"
+                                :class="(sliderElement.price == 'free') ? 'bg-warning' : 'bg-info'"> 
+                                    {{sliderElement.price}} 
+                                </span>
                             </div>
                             <p class="card-text text-secondary">
                                 {{sliderElement.content}}
                             </p>
-                            <span>
-                                <i class="fas fa-user"></i> {{sliderElement.group}}
+                            <span class="text-secondary me-2">
+                                <i class="fas fa-user me-1"></i> {{sliderElement.group}}
                             </span>
-                            <span>
-                                <i class="fas fa-tag"></i> {{sliderElement.courseType}}
+                            <span class="text-secondary">
+                                <i class="fas fa-tag me-1"></i> {{sliderElement.courseType}}
                             </span>
                         </div>
                     </div>
@@ -111,8 +114,8 @@ export default {
 
         .my-circle{
             display:block;
-            width:20px;
-            height:20px;
+            width:15px;
+            height:15px;
             border-radius: 50%;
             
         }
@@ -123,6 +126,14 @@ export default {
         .active{
             background-color:white;
         }
+        
     }
+    .fa-tag, .fa-user, .my-price-tag{
+            font-size: 0.7rem;
+        }
+        .my-price-tag{
+            padding: 0.2rem 0.5rem;
+            
+        }
 }
 </style>

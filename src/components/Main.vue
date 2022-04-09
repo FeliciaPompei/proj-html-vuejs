@@ -38,8 +38,8 @@
         <OnlineCoursesSlider
         :onlineCourses = 'onlineCourses'
         />
-        <!-- slider -->
-        <!-- pricing plans  -->
+        <PriceList/>
+        
         <!-- similar to mini navbar -->
     </main>
 </template>
@@ -51,6 +51,7 @@ import Course from './Course.vue'
 import SliderReviews from './SliderReviews.vue'
 import LearningSection from './LearningSection.vue'
 import OnlineCoursesSlider from './OnlineCourseSlider.vue'
+import PriceList from './PriceList.vue'
 export default {
     name: 'MainIndex',
     components :{
@@ -59,7 +60,8 @@ export default {
         Course,
         SliderReviews,
         LearningSection,
-        OnlineCoursesSlider
+        OnlineCoursesSlider,
+        PriceList
     },
     data(){
         return{
