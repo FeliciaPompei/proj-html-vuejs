@@ -24,7 +24,7 @@
             </div>
             
         </div>
-        <div class="row justify-content-center align-items-center p-5">
+        <div class="row justify-content-center align-items-center p-5 position-relative">
             <div class="col-6 p-5">
                 <img 
                 src="img/blog-post-12-550x550.jpg" 
@@ -57,13 +57,14 @@
                 </div>
                 
             </div>
-        </div>
-        <div class="top-button course p-2">
+            <div class="top-button course p-2">
                 <a class="text-uppercase text-white" 
                 href="#"> 
                     <i class="fas fa-chevron-up text-center"> top </i>
                 </a>
+            </div>
         </div>
+        
     </section>
 </template>
 

@@ -359,47 +359,133 @@ export default {
             pricingList : [
                 {
                     title: 'Save up to 40% byu paying weekly',
-                    subject: 'Number of Courses',
-                    
+                    list : [
+                        {
+                        title: 'Save up to 40% byu paying weekly',
+                        },
+                        {
+                        item: 'Number of Courses',
+                        },
+                        {
+                        item: 'Time',
+                        },
+                        {
+                        item: 'Web Designing',
+                        },
+                        {
+                        item: 'Human-Centered Design',
+                        },
+                        {
+                        item: 'Basic Marketing',
+                        },
+                        {
+                        item: 'Python for Everybody',
+                        },
+                        {
+                        item: 'Android Developer',
+                        },
+                        {
+                        item: 'Business English',
+                        }
+
+                    ],
                 },
                 {
-                    type: 'Stardard',
+
+                    img: 'h5-custom-icon-7.png',
+                    title: 'Stardard',
                     price: '$12',
-                    numberOfCourses : 2,
-                    item:'15 Days',
-                    webDesigning : 'check',
-                    humanCenteredDesign: 'check',
-                    basicMarketing:'cross',
-                    pythonForEverybody:'cross',
-                    androidDeveloper : 'cross',
-                    bunsinessEnglish:'cross',
-                    button:'get it now'
+                    buttonText : 'get it now',
+                    list : [
+                        {
+                            item : 2,
+                        },
+                        {
+                            item:'15 Days'
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'X',
+                        },
+                        {
+                            item: 'X',
+                        },
+                        {
+                            item: 'X',
+                        },
+                        {
+                            item: 'X',
+                        }
+                    ]
                 },
-                {
-                    type: 'Professional',
+                {   
+                    img: 'h5-custom-icon-8.png',
+                    title: 'Professional',
                     price: '$59',
-                    numberOfCourses : 4,
-                    item:'30 Days',
-                    webDesigning : 'check',
-                    humanCenteredDesign: 'check',
-                    basicMarketing:'check',
-                    pythonForEverybody:'check',
-                    androidDeveloper : 'cross',
-                    bunsinessEnglish:'cross',
-                    button:'get it now'
+                    buttonText : 'get it now',
+                    list : [
+                        {
+                            item : 4,
+                        },
+                        {
+                            item:'30 Days'
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'X',
+                        },
+                        {
+                            item: 'X',
+                        }
+                    ]
                 },
-                {
-                    type: 'Advanced',
+                {   
+                    img: 'h5-custom-icon-9.png',
+                    title: 'Advanced',
                     price: '$88',
-                    numberOfCourses : 6,
-                    days:'30 Days',
-                    webDesigning : 'check',
-                    humanCenteredDesign: 'check',
-                    basicMarketing:'check',
-                    pythonForEverybody:'check',
-                    androidDeveloper : 'check',
-                    bunsinessEnglish:'check',
-                    button:'get it now'
+                    buttonText : 'get it now',
+                    list : [
+                        {
+                            item : 6,
+                        },
+                        {
+                            item:'30 Days'
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        },
+                        {
+                            item: 'fas fa-check',
+                        }
+                    ]
                 }
             ],
             sponsoreShips :[

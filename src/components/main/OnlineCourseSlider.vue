@@ -13,7 +13,7 @@
         <div class="slider-container" 
         @mouseleave="autoPlay" 
         @mouseover="stopPlay">
-            <div class="my-slider-cards d-flex">
+            <div class="my-slider-cards d-flex p-5">
                 <div 
                 v-for="(sliderElement, index) in onlineCourses[pageNumber]" 
                 :key="index"
