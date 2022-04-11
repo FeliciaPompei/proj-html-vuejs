@@ -24,11 +24,11 @@
                             <li class="d-flex flex-column justify-content-center align-items-center mb-3"
                             v-for="(element, index) in pricingList[index].list"
                             :key="index">
-                                    <p class="mb-2"
+                                    <p class="mb-2 text-secondary"
                                     v-if="element.item !== 'fas fa-check'">
                                         {{element.item}}
                                     </p>
-                                    <i class="mb-3"
+                                    <i class="mb-3 my-color"
                                     v-show="element.item == 'fas fa-check'" 
                                     :class="element.item"></i>
                             </li>
@@ -83,5 +83,8 @@ section{
     &:hover{
         background-color: $lightBlueColorHover;
     }
+}
+.my-color{
+    color:  $lightBlueColor;
 }
 </style>
