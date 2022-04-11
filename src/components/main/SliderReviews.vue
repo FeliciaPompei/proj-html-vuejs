@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section>
         <div class="my-slider-container d-flex justify-content-center mb-5"
         @mouseleave = "autoPlay" 
         @mouseover = "stopPlay">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -79,7 +79,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/styles/partials/_variables.scss";
-
 .my-slider-container {
     width:100%;
     height:80vh;

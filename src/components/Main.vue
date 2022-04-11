@@ -8,31 +8,9 @@
         <NavBar
         :schoolSubjects = "schoolSubjects"
         />
-        <div class="top-button course p-2">
-            <a class="text-uppercase text-white" 
-            href="#"> 
-                <i class="fas fa-chevron-up text-center"> top </i>
-            </a>
-        </div>
         <Course/>
-        <div class="top-button art-empowering p-2">
-            <a class="text-uppercase text-white" 
-            href="#"> 
-                <i class="fas fa-chevron-up text-center"> top </i>
-                
-            </a>
-        </div>
-        <div class="top-button slider-review p-2">
-            <a class="text-uppercase text-white" 
-            href="#"> 
-                <i class="fas fa-chevron-up text-center"> top </i>
-                
-            </a>
-        </div>
-        
         <SliderReviews
         :sliderReviews ='sliderReviews'
-        @nextSlide = 'nextSlide'
         />
         <LearningSection
         :aboutIcademy ='aboutIcademy'
@@ -78,7 +56,7 @@ export default {
                     id : 'slider-1',
                     image : 'h6-slide-1-background.jpg',
                     title: 'Leaders in Learning',
-                    subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    subTitle : 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolLorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dol.',
                     buttonText : 'register now',
                     link: '#',
                     class : 'my-circle'
@@ -96,7 +74,7 @@ export default {
                     id : 'slider-3',
                     image : 'course-9-f-img.jpg',
                     title: 'Contemporary Ideas',
-                    subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    subTitle : 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh.',
                     buttonText : 'register now',
                     link: '#',
                     class : 'my-circle'
@@ -133,15 +111,15 @@ export default {
                 {
                     id: 1,
                     avatar: 'testimonials-standard-1.png',
-                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    name:'Bubble Gum Girl',
+                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum.',
+                    name:'Mira Wu',
                     status:'student',
                     class : 'my-circle'
                 },
                 {
                     id: 2,
                     avatar: 'testimonials-standard-2.png',
-                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id obcaecati, fuga quaerat molestias maiores a, autem, ea ut corporis asperiores eius dicta neque iusto dolore architecto sunt libero minus!',
                     name:'Joan Collins',
                     status:'student',
                     class : 'my-circle'
@@ -149,8 +127,8 @@ export default {
                 {
                     id: 3,
                     avatar: 'testimonials-standard-3.png',
-                    comment:'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-                    name:'I look smart cause I\'m wearing glasses',
+                    comment:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates sequi at animi iste adipisci excepturi, modi dolores, velit ipsam officiis voluptate aperiam. Porro velit ullam odio quo amet officiis',
+                    name:'Prof. GreenWood',
                     status:'teacher',
                     class : 'my-circle'
                 },
@@ -159,7 +137,7 @@ export default {
                 {
                     question : 'What We Do',
                     title: 'Learning Possibilities',
-                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates sequi at animi iste adipisci excepturi, modi dolores, velit ipsam officiis voluptate aperiam. Porro velit ullam odio quo amet officiis',
                     image:'h3-custom-icon-1.png',
                     list :[
                         {
@@ -199,7 +177,7 @@ export default {
                 {
                     question : 'Career Archievements',
                     title: 'Career Archievements',
-                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates sequi at animi iste adipisci excepturi, modi dolores, velit ipsam officiis voluptate aperiam. Porro velit ullam odio quo amet officiis',
                     image:'h3-custom-icon-3.png',
                     list :[
                         {
@@ -239,7 +217,7 @@ export default {
                 {
                     question : 'Steps To Success',
                     title: 'Steps To Success',
-                    content: 'Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+                    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptates sequi at animi iste adipisci excepturi, modi dolores, velit ipsam officiis voluptate aperiam. Porro velit ullam odio quo amet officiis',
                     image:'h3-custom-icon-5.png',
                     list :[
                         {
@@ -281,30 +259,33 @@ export default {
                 [
                     {   
                     image:'course-1-f-img',
+                    imagehover:'course-10-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'free',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'programming',
                     class : 'my-circle'
                 },
                 {
                     image:'course-2-f-img',
+                    imagehover:'course-11-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
-                    price:'free',
-                    content: 'lorem',
+                    price:'$20',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'business',
                     class : 'my-circle'
                 },
                 {
                     image:'course-3-f-img',
+                    imagehover:'course-12-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'free',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'business',
                     class : 'my-circle'
@@ -316,7 +297,7 @@ export default {
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'$120',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 2,
                     courseType: 'business',
                     class : 'my-circle'
@@ -326,7 +307,7 @@ export default {
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'$50',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'programming',
                     class : 'my-circle'
@@ -336,7 +317,7 @@ export default {
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'free',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'programming',
                     class : 'my-circle'
@@ -347,8 +328,8 @@ export default {
                     image:'course-7-f-img',
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
-                    price:'free',
-                    content: 'lorem',
+                    price:'$150',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 2,
                     courseType: 'business',
                     class : 'my-circle'
@@ -358,7 +339,7 @@ export default {
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'free',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'programming',
                     class : 'my-circle'
@@ -368,7 +349,7 @@ export default {
                     type: 'Andriod Developer',
                     teacher: 'Davide Sanders',
                     price:'$20',
-                    content: 'lorem',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium corrupti corporis nemo ratione.',
                     group: 1,
                     courseType: 'programming',
                     class : 'my-circle'
@@ -438,29 +419,20 @@ export default {
                 }
             ]
         }
-    },
-    methods : {
-        
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@import "../assets/styles/partials/_variables.scss";
 .top-button{
-    background-color: #40C4FF;
+    background-color: $lightBlueColor;
     width: 50px;
     height:50px;
+    z-index:3;
 
     position:absolute;
     right:0;
-}
-.course{
-    top:37%;
-}
-.art-empowering{
-    top: 59%;
-}
-.slider-review{
-    top:71%;
+    top:0;
 }
 </style>

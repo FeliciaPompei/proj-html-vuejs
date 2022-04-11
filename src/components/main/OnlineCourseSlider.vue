@@ -1,40 +1,52 @@
 <template>
-    <div class="container">
-        <div class="row">
+    <section class="container-fluid p-4">
+        <div class="row pt-4">
             <div class="col-12 text-center mb-5">
-                <h1 class="mb-3">Popular Online Courses</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab commodi numquam reiciendis excepturi</p>
+                <h1 class="mb-3">
+                    Popular Online Courses
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab commodi numquam reiciendis excepturi
+                </p>
             </div>
         </div>
-        <div class="slider-container" @mouseleave="autoPlay" @mouseover="stopPlay">
+        <div class="slider-container" 
+        @mouseleave="autoPlay" 
+        @mouseover="stopPlay">
             <div class="my-slider-cards d-flex">
                 <div 
                 v-for="(sliderElement, index) in onlineCourses[pageNumber]" 
                 :key="index"
                 >
                     <div class="justify-content-center align-items-center p-3 mb-2">
-                        <img class="card-img-top w-100"
+                        <img class="card-img-top w-100 d-block"
                         :src="`img/${sliderElement.image}.jpg`" 
                         :alt="sliderElement.type">
                         <div class="card-body w-100">
                             <div class="d-flex justify-content-between mb-2">
                                 <div>
-                                    <h5 class="card-title mb-1">{{sliderElement.type}}</h5>
-                                    <span> {{sliderElement.teacher}} </span>
+                                    <h5 class="card-title mb-1">
+                                        {{sliderElement.type}}
+                                    </h5>
+                                    <span class="text-secondary">
+                                        {{sliderElement.teacher}}
+                                    </span>
                                 </div>
                                 <span class="rounded-pill text-white my-price-tag align-self-start"
                                 :class="(sliderElement.price == 'free') ? 'bg-warning' : 'bg-info'"> 
                                     {{sliderElement.price}} 
                                 </span>
                             </div>
-                            <p class="card-text text-secondary">
+                            <p class="card-text text-secondary pe-5">
                                 {{sliderElement.content}}
                             </p>
                             <span class="text-secondary me-2">
-                                <i class="fas fa-user me-1"></i> {{sliderElement.group}}
+                                <i class="fas fa-user me-1"></i> 
+                                {{sliderElement.group}}
                             </span>
                             <span class="text-secondary">
-                                <i class="fas fa-tag me-1"></i> {{sliderElement.courseType}}
+                                <i class="fas fa-tag me-1"></i> 
+                                {{sliderElement.courseType}}
                             </span>
                         </div>
                     </div>
@@ -50,7 +62,13 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="top-button course p-2">
+                <a class="text-uppercase text-white" 
+                href="#"> 
+                    <i class="fas fa-chevron-up text-center"> top </i>
+                </a>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -99,16 +117,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/partials/_variables.scss";
+section{
+    position:relative;
+    // height:68vh;
+}
 .slider-container {
     width:100%;
-    height:60vh;
+    height:68vh;
     position:relative;
     margin-bottom:7rem;
     
 .my-circle-wrapper{
         display:flex;
         position: absolute;
-        bottom:0;
+        bottom:-2rem;
         left:50%;
         transform: translateX(-50%);
 
@@ -120,7 +143,7 @@ export default {
             
         }
         .my-bg-color{
-            background-color:#9CE0FF;
+            background-color:$circleBg;
         }
 
         .active{

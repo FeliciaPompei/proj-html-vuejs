@@ -20,7 +20,7 @@
                 <h1 class="mb-3">
                     {{element.title}}
                 </h1>
-                <p class="mb-3 text-secondary">
+                <p class="mb-3 pe-5 me-5 text-secondary">
                     {{element.content}}
                 </p>
             </div>
@@ -38,11 +38,17 @@
                 v-for="(element, index) in aboutIcademy"
                 :key="index"
                 :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
-                    <img class="img-fluid" 
+                    <img class="my-img-size" 
                     :src="`img/${element.image}`" 
                     alt="Symbol">
                 </div>
             </div>
+        </div>
+        <div class="top-button course p-2">
+                <a class="text-uppercase text-white" 
+                href="#"> 
+                    <i class="fas fa-chevron-up text-center"> top </i>
+                </a>
         </div>
     </section>
 </template>
@@ -71,33 +77,36 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import "../../assets/styles/partials/_variables.scss";
 section{
-    // background-color:paleturquoise;
-    // height:100vh;
+    position:relative;
     .thumbnails{
         width:30%;
-        // background-color: palegreen;
         .thumbnail{
             list-style: none;
+            cursor: pointer;
         }
     }
     .my-active{
-        border-left: #40C4FF solid 5px;
+        border-left: $lightBlueColor solid 5px;
         color:#40C4FF;
     }
     .article{
         width:70%;
-        // background-color: palevioletred;
     }
     .my-check-mark:before{
         content:'\2713';
+        padding-right: 0.5rem;
         font-size: 1.5rem;
-        color:lightblue;
+        color:$lightBlueColor;
     }
     .my-check-mark{
         list-style:none;
         padding: 0.5rem;
         padding-left:0;
+    }
+    .my-img-size{
+        width:150px;
     }
 }
 </style>

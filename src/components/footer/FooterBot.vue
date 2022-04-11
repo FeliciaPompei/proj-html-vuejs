@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid p-5 text-white">
         <div class="row justify-content-between">
-            <div class="col-6">
+            <div class="col-6 px-5">
                 <span>Copyrights 2017 <i class="fa fa-copyright pe-1"> </i>Mikado Themes</span>
             </div>
             <div class="col-4 d-flex justify-content-evenly text-uppercase">

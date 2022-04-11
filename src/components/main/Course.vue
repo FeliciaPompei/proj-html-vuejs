@@ -1,13 +1,13 @@
 <template>
 <!-- Add button to go to the top -->
-    <div class="container pt-5 ">
-        <div class="row">
-            <div class="col-6">
+    <section class="container-fluid pt-5">
+        <div class="row p-5">
+            <div class="col-6 px-5">
                 <h1 class="fw-bold my-title-size mb-3">
                     The Trusted Name for In-Home Tutoring.
                 </h1>
             </div>
-            <div class="col-12">
+            <div class="col-12 px-5">
                 <p class="fs-5">
                     Lorem Ipsn gravida nibh vel velit auctor aliquetnean, lorem quis bibendum auci consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.
                 </p>
@@ -16,6 +16,7 @@
                     learn more
                 </a>
             </div>
+            
             <div class="col-12 d-flex justify-content-center position-relative">
                 <img 
                 src="img/h5-img-1.jpg" 
@@ -57,7 +58,13 @@
                 
             </div>
         </div>
-    </div>
+        <div class="top-button course p-2">
+                <a class="text-uppercase text-white" 
+                href="#"> 
+                    <i class="fas fa-chevron-up text-center"> top </i>
+                </a>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -68,6 +75,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/styles/partials/_variables.scss";
+.container{
+    position:relative;
+}
 .my-title-size{
     font-size:3rem;
 }
