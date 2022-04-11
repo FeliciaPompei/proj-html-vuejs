@@ -1,16 +1,20 @@
 <template>
-    <section class="container-fluid p-3">
-        <div class="row">
+    <section class="container-fluid p-5 text-white">
+        <div class="row justify-content-between">
             <div class="col-6">
-                <span>Copyrights 2017 <i></i>Mikado Themes</span>
+                <span>Copyrights 2017 <i class="fa fa-copyright pe-1"> </i>Mikado Themes</span>
             </div>
-            <div class="col-6 d-flex">
-                <p>CALL +44 300 303 0266</p>
-                <p>follow us</p>
+            <div class="col-4 d-flex justify-content-evenly text-uppercase">
+                <p>
+                    call +44 300 303 0266
+                </p>
+                <p>
+                    follow us
+                </p>
                 <div
                 v-for="(link, index) in socialMedia"
                 :key="index">
-                    <img :src="`img/${link.img} `" :alt="link.text">
+                    <i :class="link.icon"></i>
                 </div>
             </div>
         </div>

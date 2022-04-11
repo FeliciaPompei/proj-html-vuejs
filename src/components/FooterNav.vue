@@ -1,14 +1,17 @@
 <template>
-    <section class="container-fluid p-3">
+    <section class="container-fluid py-5 text-white">
         <div class="row justify-content-evenly">
-            <div class="col-4 d-flex flex-column"
+            <div class="col-3 d-flex flex-column"
             v-for="(contact, index) in footerConctacts"
             :key="index">
-                <img src="`img/${contact.logo}.png`" alt="Iacamedy Logo">
-                <span>
+                <img id="logo"
+                class="mb-5"
+                :src="`img/${contact.logo}`"
+                alt="Iacamedy Logo">
+                <span class="pe-5 mb-4">
                     {{contact.pharse}}
                 </span>
-                <span>
+                <span class="mb-3">
                     <i class="fas fa-phone"> </i>
                     {{contact.phoneNumber}}
                 </span>
@@ -17,16 +20,24 @@
                     {{contact.openingDays}}
                 </span>
             </div>
-            <div class="col-4"
+            <div class="col-3"
             v-for="(link, index) in footerLinks"
             :key="index">
-            <h2>{{link.title}} </h2>
-                <ul>
-                    <li
+            <h2 class="mb-5">
+                {{link.title}}
+            </h2>
+                <ul class="list-group">
+                    <li class="mb-3"
                     v-for="(element, index) in footerLinks[index].links"
                     :key="index" >
-                        {{element.text}}
+                        <h6 class="mb-0 fw-bold">
+                            {{element.text}}
+                        </h6>
                         {{element.link}}
+                        <img id="footer-img"
+                        class="img-fluid"
+                        :src="`img/${element.img}`" 
+                        alt="world map">
                     </li>
                 </ul>
             </div>
@@ -56,5 +67,15 @@ export default {
 <style lang="scss" scoped>
 section {
     border-bottom: 1px white solid;
+    width:90%;
+    #logo{
+        width: 150px;
+    }
+    ul{
+        li{
+        list-style: none;
+    }
+    
+    }
 }
 </style>

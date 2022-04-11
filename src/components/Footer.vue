@@ -23,7 +23,7 @@ export default {
         return{
             footerConctacts :[
                 {
-                    logo:'h5-client-1',
+                    logo:'footer-logo-1.png',
                     pharse:'Providing Life Changing Experiences Through Education. Call That Fot Your Busy Life. Closer to Home',
                     phoneNumber:'1-677-124-44227',
                     openingDays:'Mon-Sat 8:00-18:00'
@@ -72,7 +72,7 @@ export default {
                     title: 'Flexible Learning',
                     links:[
                         {
-                            link:'img'
+                            img:'footer-img-1.png'
                         }
                     ]
                 }
@@ -81,15 +81,15 @@ export default {
             socialMedia :[
                 {
                     text:'Twitter',
-                    img:'',
+                    icon:'fab fa-twitter',
                 },
                 {
                     text:'Instragram',
-                    img:'',
+                    icon:'fab fa-instagram',
                 },
                 {
                     text:'FaceBook',
-                    img:'',
+                    icon:'fab fa-facebook-f',
                 },
             ]
         }
@@ -99,7 +99,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    footer{
-        background-color: gray;
-    }
+@import "../assets/styles/partials/_variables.scss";
+
+footer{
+    background-color: $footerBg;
+}
 </style>

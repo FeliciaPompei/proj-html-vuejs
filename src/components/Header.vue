@@ -21,9 +21,6 @@
                 </li>
             </ul>
         </nav>
-        <!-- Header navBar -->
-        
-        <!-- /Header navbar -->
     </header>
 </template>
 
