@@ -38,9 +38,11 @@
         <OnlineCoursesSlider
         :onlineCourses = 'onlineCourses'
         />
-        <PriceList/>
+        <PriceList
+        :pricingList = 'pricingList'/>
         
-        <!-- similar to mini navbar -->
+        <Sponsores
+        :sponsoreShips = 'sponsoreShips'/>
     </main>
 </template>
 
@@ -52,6 +54,7 @@ import SliderReviews from './SliderReviews.vue'
 import LearningSection from './LearningSection.vue'
 import OnlineCoursesSlider from './OnlineCourseSlider.vue'
 import PriceList from './PriceList.vue'
+import Sponsores from './Sponsores.vue'
 export default {
     name: 'MainIndex',
     components :{
@@ -61,7 +64,8 @@ export default {
         SliderReviews,
         LearningSection,
         OnlineCoursesSlider,
-        PriceList
+        PriceList,
+        Sponsores
     },
     data(){
         return{
@@ -367,6 +371,68 @@ export default {
                     class : 'my-circle'
                 }
                 ]
+            ],
+            pricingList : [
+                {
+                    title: 'Save up to 40% byu paying weekly',
+                    subject: 'Number of Courses',
+                    
+                },
+                {
+                    type: 'Stardard',
+                    price: '$12',
+                    numberOfCourses : 2,
+                    item:'15 Days',
+                    webDesigning : 'check',
+                    humanCenteredDesign: 'check',
+                    basicMarketing:'cross',
+                    pythonForEverybody:'cross',
+                    androidDeveloper : 'cross',
+                    bunsinessEnglish:'cross',
+                    button:'get it now'
+                },
+                {
+                    type: 'Professional',
+                    price: '$59',
+                    numberOfCourses : 4,
+                    item:'30 Days',
+                    webDesigning : 'check',
+                    humanCenteredDesign: 'check',
+                    basicMarketing:'check',
+                    pythonForEverybody:'check',
+                    androidDeveloper : 'cross',
+                    bunsinessEnglish:'cross',
+                    button:'get it now'
+                },
+                {
+                    type: 'Advanced',
+                    price: '$88',
+                    numberOfCourses : 6,
+                    days:'30 Days',
+                    webDesigning : 'check',
+                    humanCenteredDesign: 'check',
+                    basicMarketing:'check',
+                    pythonForEverybody:'check',
+                    androidDeveloper : 'check',
+                    bunsinessEnglish:'check',
+                    button:'get it now'
+                }
+            ],
+            sponsoreShips :[
+                {
+                    img:'h5-client-5',
+                },
+                {
+                    img:'h5-client-1',
+                    
+                    
+                },
+                {
+                    img:'h5-client-2',
+                },
+                {
+                    img:'h5-client-4',
+                }
             ]
         }
     }
