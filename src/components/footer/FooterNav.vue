@@ -33,7 +33,10 @@
                         <h6 class="mb-0 fw-bold">
                             {{element.text}}
                         </h6>
-                        {{element.link}}
+                        <a 
+                        href="#">
+                            {{element.link}}
+                        </a>
                         <div v-if="element.img">
                             <img id="footer-img"
                             class="img-fluid"
@@ -70,6 +73,14 @@ export default {
 section {
     border-bottom: 1px white solid;
     width:90%;
+    a{
+        text-decoration: none;
+        text-transform: none;
+        color:white;
+    }
+    a:hover{
+        color:gray;
+    }
     #logo{
         width: 150px;
     }

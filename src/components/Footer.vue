@@ -81,14 +81,17 @@ export default {
             socialMedia :[
                 {
                     text:'Twitter',
+                    link:'#',
                     icon:'fab fa-twitter',
                 },
                 {
                     text:'Instragram',
+                    link:'#',
                     icon:'fab fa-instagram',
                 },
                 {
                     text:'FaceBook',
+                    link:'#',
                     icon:'fab fa-facebook-f',
                 },
             ]

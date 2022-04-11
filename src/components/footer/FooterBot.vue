@@ -9,12 +9,16 @@
                     call +44 300 303 0266
                 </p>
                 <p>
-                    follow us
+                    <a class="text-uppercase"
+                    href="#">follow us</a>
                 </p>
                 <div
                 v-for="(link, index) in socialMedia"
                 :key="index">
-                    <i :class="link.icon"></i>
+                    <a 
+                    :href="link.link">
+                        <i :class="link.icon"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -29,5 +33,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+a{
+        text-decoration: none;
+        text-transform: none;
+        color:white;
+    }
+    a:hover{
+        color:gray;
+    }
 </style>
