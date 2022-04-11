@@ -60,9 +60,9 @@ export default {
         }
     },
     methods: {
-        displayListItems(index){
-            if(index > -1){
-                this.list = index;
+        displayListItems(linkIndex){
+            if(linkIndex > -1){
+                this.list = linkIndex;
             }
         },
     }

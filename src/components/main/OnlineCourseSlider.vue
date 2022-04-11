@@ -120,7 +120,7 @@ export default {
 @import "../../assets/styles/partials/_variables.scss";
 section{
     position:relative;
-    // height:68vh;
+
 }
 .slider-container {
     width:100%;
@@ -131,7 +131,7 @@ section{
 .my-circle-wrapper{
         display:flex;
         position: absolute;
-        bottom:-2rem;
+        bottom:-5rem;
         left:50%;
         transform: translateX(-50%);
 

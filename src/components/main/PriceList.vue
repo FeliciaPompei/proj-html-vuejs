@@ -21,7 +21,7 @@
                             <p class="mb-0">{{element.price}} </p>
                         </div>
                         <ul class="me-4 mt-4">
-                            <li class="d-flex flex-column justify-content-center"
+                            <li class="d-flex flex-column justify-content-center align-items-center mb-3"
                             v-for="(element, index) in pricingList[index].list"
                             :key="index">
                                     <p class="mb-2"
@@ -33,7 +33,7 @@
                                     :class="element.item"></i>
                             </li>
                         </ul>
-                        <button class="text-uppercase btn my-btn text-white"
+                        <button class="text-uppercase btn my-btn text-white mt-5"
                         v-show="element.buttonText !== undefined">{{element.buttonText}} </button>
                     </div>
                 </div>
