@@ -34,10 +34,12 @@
                             {{element.text}}
                         </h6>
                         {{element.link}}
-                        <img id="footer-img"
-                        class="img-fluid"
-                        :src="`img/${element.img}`" 
-                        alt="world map">
+                        <div v-if="element.img">
+                            <img id="footer-img"
+                            class="img-fluid"
+                            :src="`img/${element.img}`" 
+                            alt="world map">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -74,8 +76,7 @@ section {
     ul{
         li{
         list-style: none;
-    }
-    
+        }
     }
 }
 </style>

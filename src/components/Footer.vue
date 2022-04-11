@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import FooterNav from './FooterNav.vue'
-import FooterBot from './FooterBot.vue'
+import FooterNav from './footer/FooterNav.vue'
+import FooterBot from './footer/FooterBot.vue'
 export default {
     name: 'FooterIndex',
     components:{
