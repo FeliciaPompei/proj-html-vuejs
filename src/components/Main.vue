@@ -1,8 +1,10 @@
 <template>
     <main class="position-relative">
-        <Slider 
-        :element = "topSlider"
+        <!-- Banner Slider -->
+        <BannerSlider 
+        :topSlider = "topSlider"
         />
+        <!-- Mini NavBar -->
         <NavBar
         :schoolSubjects = "schoolSubjects"
         />
@@ -30,6 +32,7 @@
         
         <SliderReviews
         :sliderReviews ='sliderReviews'
+        @nextSlide = 'nextSlide'
         />
         <LearningSection
         :aboutIcademy ='aboutIcademy'
@@ -47,18 +50,18 @@
 </template>
 
 <script>
-import Slider from './Slider.vue'
-import NavBar from './NavBar.vue'
-import Course from './Course.vue'
-import SliderReviews from './SliderReviews.vue'
-import LearningSection from './LearningSection.vue'
-import OnlineCoursesSlider from './OnlineCourseSlider.vue'
-import PriceList from './PriceList.vue'
-import Sponsores from './Sponsores.vue'
+import BannerSlider from './main/BannerSlider.vue'
+import NavBar from './main/NavBar.vue'
+import Course from './main/Course.vue'
+import SliderReviews from './main/SliderReviews.vue'
+import LearningSection from './main/LearningSection.vue'
+import OnlineCoursesSlider from './main/OnlineCourseSlider.vue'
+import PriceList from './main/PriceList.vue'
+import Sponsores from './main/Sponsores.vue'
 export default {
     name: 'MainIndex',
     components :{
-        Slider,
+        BannerSlider,
         NavBar,
         Course,
         SliderReviews,
@@ -435,6 +438,9 @@ export default {
                 }
             ]
         }
+    },
+    methods : {
+        
     }
 }
 </script>

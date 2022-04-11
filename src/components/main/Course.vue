@@ -3,7 +3,9 @@
     <div class="container pt-5 ">
         <div class="row">
             <div class="col-6">
-                <h1 class="fw-bold my-title-size mb-3">The Trusted Name for In-Home Tutoring.</h1>
+                <h1 class="fw-bold my-title-size mb-3">
+                    The Trusted Name for In-Home Tutoring.
+                </h1>
             </div>
             <div class="col-12">
                 <p class="fs-5">
@@ -15,7 +17,9 @@
                 </a>
             </div>
             <div class="col-12 d-flex justify-content-center position-relative">
-                <img src="img/h5-img-1.jpg" alt="Teenagers readings and smiling">
+                <img 
+                src="img/h5-img-1.jpg" 
+                alt="Teenagers readings and smiling">
             </div>
             
         </div>
@@ -63,14 +67,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/partials/_variables.scss";
 .my-title-size{
     font-size:3rem;
 }
 .my-text-color{
-    color:#40C4FF;
+    color:$lightBlueColor;
 }
 .top-button{
-    background-color: #40C4FF;
+    background-color: $lightBlueColor;
     width: 50px;
     height:50px;
 

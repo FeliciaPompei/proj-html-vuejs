@@ -6,12 +6,14 @@
             :key="index"
             >
                 <div class="my-content-container">
-                    <img class="mb-3"
-                    :src="`img/${element.image} `" 
-                    :alt="element.text">
-                    <h6 class="text-center">
-                        {{element.text}} 
-                    </h6>
+                    <a href="#">
+                        <img class="mb-3"
+                        :src="`img/${element.image} `" 
+                        :alt="element.text">
+                        <h6 class="text-center">
+                            {{element.text}} 
+                        </h6>
+                    </a>
                 </div>
             </div>
         </div>
@@ -27,18 +29,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/partials/_variables.scss";
     nav{
         .my-content-container{
-            background-color:#F2F8FC;
+            background-color:$miniNavBg;
             padding:3rem 2.5rem;
         }
-        img{
-            // width:150px;
-            // height:150px;
-
-        }
-        h6 {
-            
+        a{
+            text-decoration: none;
+            color:black;
         }
     }
 </style>

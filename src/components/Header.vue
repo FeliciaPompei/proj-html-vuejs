@@ -1,23 +1,28 @@
 <template>
     <header class="container-fluid d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="img/logo-light.png" alt="icamedy Logo"></a>
+            <a class="navbar-brand" 
+            href="#">
+            <img 
+            src="img/logo-light.png" 
+            alt="icamedy Logo">
+            </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item text-uppercase m-4" 
                 v-for="(item, index) in navItems" 
                 :key="index">
-                <a class="nav-link text-white"
-                :href="item.link"
-                v-if="item.text !=''"
-                >
-                    {{item.text}} 
-                </a>
-                <a class="nav-link text-white"
-                :href="item.link"
-                v-else
-                >
-                <i :class="item.symbol"></i>
-                </a>
+                    <a class="nav-link text-white"
+                    :href="item.link"
+                    v-if="item.text !=''"
+                    >
+                        {{item.text}} 
+                    </a>
+                    <a class="nav-link text-white"
+                    :href="item.link"
+                    v-else
+                    >
+                    <i :class="item.symbol"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -74,12 +79,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/partials/_variables.scss";
 header{
     position:absolute;
     top:0;
     z-index:3;
     img{
         width:175px;
+    }
+    li:hover{
+        background-color:$hoverBg;
     }
 }
 </style>

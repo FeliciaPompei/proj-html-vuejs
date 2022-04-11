@@ -1,8 +1,12 @@
 <template>
     <div>
-        <div class="slider-container" @mouseleave="autoPlay" @mouseover="stopPlay">
+        <div class="slider-container" 
+        @mouseleave="autoPlay" 
+        @mouseover="stopPlay">
             <div class="my-slider-images">
-                <div v-for="(sliderElement, index) in element" :key="index"> 
+                <div 
+                v-for="(sliderElement, index) in topSlider" 
+                :key="index"> 
                     <div class="img-wrapper" 
                     :class="(index == sliderIndex) ? 'd-block' : 'd-none' ">
                         <img class="card-img-top img-fluid"
@@ -31,7 +35,7 @@
                     </div>
                     <div class= "my-circle-wrapper">
                         <div class="me-2 d-flex justify-content-center align-items-center"
-                        v-for="(sliderElement, index) in element"
+                        v-for="(sliderElement, index) in topSlider"
                         :key="index"
                         @click="imageClick(index)" 
                         :id="sliderElement.class"
@@ -56,8 +60,8 @@
 
 <script>
 export default {
-    name: 'SliderElement',
-    props : ['element'],
+    name: 'BannerSlider',
+    props : ['topSlider'],
     data(){
         return {
             isInAutoScroll : null,
@@ -69,7 +73,7 @@ export default {
             this.sliderIndex = imageIndex;
         },
         nextSlide : function (){
-            if(this.sliderIndex == (this.element.length -1)){
+            if(this.sliderIndex == (this.topSlider.length -1)){
                 this.sliderIndex = 0;
             } else {
                 this.sliderIndex++;
@@ -77,7 +81,7 @@ export default {
         },
         previousSlide : function (){
             if(this.sliderIndex == 0){
-                this.sliderIndex = this.element.length -1;
+                this.sliderIndex = this.topSlider.length -1;
             } else {
                 this.sliderIndex--;
             }
@@ -94,11 +98,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/partials/_variables.scss";
 .slider-container {
     width:100%;
-    height:85vh;
     position:relative;
-    margin-bottom:7rem;
+    margin-bottom:2rem;
     img{
         width:100%;
         height:85vh;
@@ -119,12 +123,16 @@ export default {
         }
         .my-custom-btn{
             padding: 1rem 2.5rem;
-            background-color: #40C4FF;
+            background-color: $lightBlueColor;
             border-radius: 0;
             text-transform: uppercase;
             color:white;
             font-size: 0.8rem;
+            &:hover{
+            background-color: $lightBlueColorHover;
         }
+        }
+        
     }
     .my-previous, .my-next{
         position: absolute;
@@ -151,7 +159,7 @@ export default {
             width:20px;
             height:20px;
             border-radius: 50%;
-            background-color:#0707071A;
+            background-color:$lightGray;
 
             .fa-circle{
                 font-size: 0.5rem;

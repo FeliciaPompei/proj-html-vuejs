@@ -78,12 +78,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/partials/_variables.scss";
+
 .my-slider-container {
     width:100%;
     height:80vh;
     position:relative;
     padding:2rem;
-    background-image: url("../../public/img/h5-parallax-img-1.png");
+    background-image: url("../../../public/img/h5-parallax-img-1.png");
     background-position: center;
     .my-content-box{
         width:50%;
@@ -97,7 +99,6 @@ export default {
         h1{
             font-size: 4rem;
             color:white;
-            background-color: rgba($color: #000000, $alpha: 0.4);
             border-radius: 2rem;
             padding: 1rem;
         }
@@ -118,7 +119,7 @@ export default {
             
         }
         .my-bg-color{
-            background-color:#9CE0FF;
+            background-color: $circleBg;
         }
 
         .active{
