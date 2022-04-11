@@ -1,7 +1,7 @@
 <template>
     <section class="container-fluid p-4">
         <div class="row pt-4">
-            <div class="col-12 text-center mb-5">
+            <div class="col-12 text-center mb-3">
                 <h1 class="mb-3">
                     Popular Online Courses
                 </h1>
